@@ -10,14 +10,14 @@ def button_click():
         if choice_2 == "1":
             phones = mi.get_number()
         elif choice_2 == "2":
-            mi.get_number_line_example()
-            mi.get_number_line()
-        print(phones)
+            phones = mi.get_number_line()
+        # print(phones)
         me.write_in_txt(phones)
+        me.write_in_csv(phones)
 
+    elif choice == "2":
+        me.print_from_txt()
     # elif choice == "2":
     #     fd
-    # elif choice == "2":
-    #     fd
-    # else:
+    else:
         print("Error!")

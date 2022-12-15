@@ -1,22 +1,38 @@
 def get_number():
-    print("Для выхода введите: exit или 0")
-    family = ""
+    print("Для выхода введите в поле Фамилия: exit или 0")
     phones = []
     while (True):
-        family = input('family = ')
+        family = input('Фамилия = ')
         if family == "exit" or family == "0":
             break
-        name = input('name = ')
-        phone = input('phone = ')
-        note = input('note = ')
+        name = input('Имя = ')
+        phone = input('Телефон = ')
+        note = input('Описание = ')
         phones.append((family, name, phone, note))
     return phones
 
 
 def get_number_line():
-    return input()
+    print("пример: Иванов; Иван; 89172858585; сотовый")
+    phones = []
+    while (True):
+        phones_data = input()
+        if phones_data == "exit" or phones_data == "0" or phones_data.count(";") != 3:
+            break
+        family, name, phone, note = phones_data.split(";")
+        family = family.replace(" ", "")
+        name = name.replace(" ", "")
+        phone = phone.replace(" ", "")
+        note = note.replace(" ", "")
+        phones.append((family, name, phone, note))
+    return phones
 
 
-def get_number_line_example():
-    return print("пример: Иванов; Иван; 89172858585; сотовый")
+
+
+# sfdgsdf; sdfgsd; dsfgsd; sdfgsdfg
+# sdfgsdfg;sdfgsdfg;sdfgsdf;sdfgsdfg
+# dfsgsdfg ; dfsgdfg ; dsfgsdfg ; dfsgsdfg
+
+
 
