@@ -2,12 +2,12 @@ def get_number():
     print("Для выхода введите в поле Фамилия: exit или 0")
     phones = []
     while (True):
-        family = input('Фамилия = ')
+        family = input("Фамилия = ")
         if family == "exit" or family == "0":
             break
-        name = input('Имя = ')
-        phone = input('Телефон = ')
-        note = input('Описание = ')
+        name = input("Имя = ")
+        phone = input("Телефон = ")
+        note = input("Описание = ")
         phones.append((family, name, phone, note))
     return phones
 
@@ -27,12 +27,6 @@ def get_number_line():
         phones.append((family, name, phone, note))
     return phones
 
-
-
-
 # sfdgsdf; sdfgsd; dsfgsd; sdfgsdfg
 # sdfgsdfg;sdfgsdfg;sdfgsdf;sdfgsdfg
 # dfsgsdfg ; dfsgdfg ; dsfgsdfg ; dfsgsdfg
-
-
-

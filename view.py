@@ -5,3 +5,11 @@ def hello():
 
 def str_or_line():
     return input("Выберете метод ввода:\n1)В столбик\n2)В строчку\n")
+
+
+def search_for():
+    return input("Поиск по:\n1)Фамилии\n2)Имени\n3)Номеру телефона\n")
+
+
+def search_in():
+    return input("Введите:")
