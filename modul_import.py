@@ -19,11 +19,7 @@ def get_number_line():
         phones_data = input()
         if phones_data == "exit" or phones_data == "0" or phones_data.count(";") != 3:
             break
-        family, name, phone, note = phones_data.split(";")
-        family = family.replace(" ", "")
-        name = name.replace(" ", "")
-        phone = phone.replace(" ", "")
-        note = note.replace(" ", "")
+        family, name, phone, note = phones_data.split('; ')
         phones.append((family, name, phone, note))
     return phones
 
