@@ -11,3 +11,11 @@ def search_for(family, ask):
             chet += 1
     if chet == 0:
         print("Таких нет")
+
+
+def search_for_similar_in_txt(record_find):
+    with open('file.txt', 'r', encoding="utf-8") as file:
+        record = file.readlines()
+        for i in record:
+            if i == record_find:
+                return True
